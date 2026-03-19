@@ -19,7 +19,7 @@ map({ 'n', 'v' }, '<leader>y', '"+y', { desc = 'Yank to clipboard' })
 map({ 'n', 'v' }, '<leader>d', '"_d', { desc = 'Delete without trashing register' })
 
 -- replace occurences of word under cursor
-map('n', '<leader>fr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Find and replace word under cursor' })
+-- map('n', '<leader>fr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Find and replace word under cursor' })
 
 -- better block moving
 map('v', '<', '<gv')

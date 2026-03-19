@@ -6,10 +6,11 @@ conform.setup({
         lua = { 'stylua' },
         c = { 'clang-format' },
         cpp = { 'clang-format' },
-        python = { 'ruff' },
+        python = { 'ruff_format' },
     },
     format_on_save = function(bufnr)
         local disabled_filetypes = { c = true, cpp = true }
+
         if disabled_filetypes[vim.bo[bufnr].filetype] then
             return nil
         else
