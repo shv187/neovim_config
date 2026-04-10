@@ -4,7 +4,7 @@ local map = vim.keymap.set
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- may not work in all terminals, otherwise <C-\><C-n>
-map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+map('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- ctrl + hjkl to switch windows
 map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
