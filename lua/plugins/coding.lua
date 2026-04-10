@@ -164,7 +164,28 @@ vim.lsp.config('clangd', {
     },
 })
 
-vim.diagnostic.config({ virtual_text = true })
+-- vim.diagnostic.config({ virtual_text = true })
+
+local sev = vim.diagnostic.severity
+
+vim.diagnostic.config({
+    virtual_text = true,
+    severity_sort = true,
+    update_in_insert = false,
+    float = {
+        border = 'rounded',
+        source = true,
+    },
+    signs = {
+        text = {
+            [sev.ERROR] = 'E',
+            [sev.WARN] = 'W',
+            [sev.INFO] = 'I',
+            [sev.HINT] = 'H',
+        },
+    },
+})
+
 vim.lsp.inlay_hint.enable = true
 vim.lsp.inline_completion.enable()
 
