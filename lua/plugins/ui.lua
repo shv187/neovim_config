@@ -70,3 +70,5 @@ require('lualine').setup({
     },
     extensions = { 'neo-tree' },
 })
+
+require('vim._core.ui2').enable({})
