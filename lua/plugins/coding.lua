@@ -13,17 +13,6 @@ require('nvim-treesitter.configs').setup({
 })
 
 --
--- It's here, cuz I *think* it was important
--- but I'm not sure anymore...
---
--- vim.api.nvim_create_autocmd('FileType', {
---     pattern = { '<filetype>' },
---     callback = function()
---         vim.treesitter.start()
---     end,
--- })
-
---
 -- LazyDev
 --
 vim.pack.add({ 'http://github.com/folke/lazydev.nvim' }, { confirm = false })
