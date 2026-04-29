@@ -53,5 +53,5 @@ require('kanagawa').setup({
 if _G.is_nixos then
     vim.cmd.colorscheme('gruvbox')
 else
-    vim.cmd.colorscheme('kanagawa')
+    vim.cmd.colorscheme('catppuccin')
 end
